@@ -1,0 +1,10 @@
+[Unit]
+Description=SSSSSSSSSSSSSSSScadaWatt w5500 Resetter
+Before=networking.service
+
+[Service]
+Type=idle
+ExecStart=/w5500_reset.sh
+
+[Install]
+WantedBy=sysinit.target
